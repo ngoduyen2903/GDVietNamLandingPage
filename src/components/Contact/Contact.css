@@ -1,0 +1,72 @@
+.contact .info-box {
+  color: #444444;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+}
+.contact {
+  margin: 100px 0;
+}
+.contact-icon {
+  color: var(--bluebold);
+  font-size: 45px;
+}
+.contact .info-box h3 {
+  font-size: 17px;
+  color: var(--bluebold);
+  font-weight: 700;
+  margin: 20px 0 10px 0;
+  font-family: "Roboto-Regular";
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+  font-family: "Roboto-Regular";
+  color: var(--gray);
+}
+
+.contact .email-form {
+  background: #f4f4f4;
+  padding: 40px;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  border-radius: 0;
+  font-family: "Roboto-Light";
+  color: gray;
+}
+
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+  border-color: #ecf3ff;
+}
+
+.contact .email-form input {
+  padding: 10px 15px;
+}
+
+.contact .email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .email-form button[type="submit"] {
+  background: var(--BlueMain);
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .email-form button[type="submit"]:hover {
+  background: var(--BlueMain);
+}

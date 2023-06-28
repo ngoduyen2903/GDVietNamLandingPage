@@ -1,0 +1,70 @@
+.service-item {
+  position: relative;
+  height: 300px;
+  padding: 30px 25px;
+  background: #ffffff;
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
+  transition: 0.5s;
+}
+.service-item:hover {
+  background: var(--bluebold);
+}
+.service-item .service-icon {
+  margin: 0 auto 20px auto;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  background: url(../../img/icon-shape-primary.png) center center no-repeat;
+  transition: 0.5s;
+  background-size: cover;
+}
+.service-item:hover .service-icon {
+  color: var(--bluebold);
+  background: url(../../img/icon-shape-white.png);
+}
+.service-item h5 {
+  transition: 0.5s;
+  font-family: "Roboto-Medium";
+  font-size: 20px;
+}
+.service-item p {
+  transition: 0.5s;
+  font-family: "Roboto-Light";
+  font-size: 16px;
+}
+.service-item:hover h5,
+.service-item:hover p {
+  color: #6495ed;
+}
+.service-item a.btn {
+  position: relative;
+  display: flex;
+  color: var(--bluebold);
+  transition: 0.5s;
+  z-index: 1;
+  font-family: "Roboto-Medium";
+  font-size: 18px;
+}
+.service-item:hover a.btn {
+  color: var(--bluebold);
+}
+.service-item a.btn::before {
+  position: absolute;
+  content: "";
+  width: 70px;
+  height: 35px;
+  top: 0;
+  left: 0;
+  border-radius: 35px;
+  background: #dddddd;
+  transition: 0.5s;
+  z-index: -1;
+  padding: 20px 30px;
+}
+.service-item:hover a.btn::before {
+  width: 100%;
+  background: var(--light);
+}

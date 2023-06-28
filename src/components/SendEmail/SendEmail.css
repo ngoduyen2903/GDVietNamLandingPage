@@ -1,0 +1,6 @@
+.newsletter {
+    background: url(../../img/bg-top.png), url(../../img/bg-bottom.png);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-color: var(--bluebold);
+}

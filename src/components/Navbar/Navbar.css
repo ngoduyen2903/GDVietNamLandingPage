@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("/src/fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/src/fonts/Roboto-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("/src/fonts/Roboto-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("/src/fonts/Roboto-Light.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.header {
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 10px 0;
+  background-color: #fff;
+  display: flex;
+}
+
+.header.header-scrolled {
+  background: #fff;
+  padding: 15px 0;
+  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+}
+
+.header .logo {
+  line-height: 0;
+}
+
+.header .logo img {
+  max-height: 40px;
+  margin-right: 6px;
+}
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Roboto-Medium";
+  font-size: 16px;
+  color: var(--bluebold);
+  white-space: nowrap;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover > a {
+  font-weight: 600;
+}
+
+.navbar .getstarted,
+.navbar .getstarted:focus {
+  background: var(--bluebold);
+  padding: 8px 20px;
+  margin-left: 30px;
+  border-radius: 4px;
+  color: #fff;
+}
+
+.navbar .getstarted:hover,
+.navbar .getstarted:focus:hover {
+  color: #fff;
+  background: var(--bluebold);
+}
+.mobile-nav-toggle {
+  color: var(--bluebold);
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+@media (max-width: 1200px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
