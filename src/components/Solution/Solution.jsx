@@ -12,17 +12,16 @@ import { Link } from 'react-scroll';
 const Solution = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
   return (
-    <section className="solution layout_padding">
+    <section className="solution layout_padding" id="solution">
       <div className="container">
         <div className="row">
-          <div className="w-left col-md-5">
+          <div className="w-sleft col-md-6">
             <div className="awesome">
               <span style={{ color: darkMode ? "white" : "" }} className="mt-5">
                 Tại sao nên chọn GD Việt Nam?
               </span>
-              <span>GIẢI PHÁP TOÀN DIỆN</span>
+              <span style={{ color: darkMode ? "#fff" : "" }}>GIẢI PHÁP TOÀN DIỆN</span>
               <span>
                 Công ty Cổ phần Giải pháp Công nghệ GD Việt Nam đi đầu trong lĩnh vực số hóa, chuyển đổi số. Chúng tôi chuyên cung cấp giải pháp và các phần mềm theo yêu cầu. Với đội ngũ kĩ thuật chuyên môn cao từ khâu thiết kế đến tư vấn, nghiên cứu, phân tích và tạo ra các sản phẩm tối ưu nhất.
               </span>
@@ -31,7 +30,7 @@ const Solution = () => {
               </Link>
             </div>
           </div>
-          <div className="w-right col-md-7">
+          <div className="w-right col-md-6">
             <motion.div
               initial={{ rotate: -90 }}
               whileInView={{ rotate: 0 }}

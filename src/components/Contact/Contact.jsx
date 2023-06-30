@@ -1,17 +1,21 @@
+import React, { useContext, useRef, useState } from "react";
 import "./Contact.css";
 import { BiMap } from "react-icons/bi";
 import { AiOutlinePhone } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiTimeFive } from "react-icons/bi";
+import { themeContext } from "../../Context";
 
 const Contact = () => {
+  const theme = useContext(themeContext);
+  const darkMode = theme.state.darkMode;
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <div className="container">
         <div className="row justify-content-center text-center">
-          <div className="container section-title">
-            <h3 style={{ color: '#2125B1' }}>LIÊN HỆ</h3>
-            <p>Rất vui khi bạn liên hệ với chúng tôi</p>
+          <div className="container contact-title">
+            <h3 style={{ color: darkMode ? "#fff" : "" }}>LIÊN HỆ</h3>
+            <p style={{ color: darkMode ? "#fff" : "" }}>Rất vui khi bạn liên hệ với chúng tôi</p>
           </div>
         </div>
         <div className="row gy-4">

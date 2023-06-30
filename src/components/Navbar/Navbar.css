@@ -71,7 +71,7 @@
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Roboto-Medium";
-  font-size: 16px;
+  font-size: 15px;
   color: var(--bluebold);
   white-space: nowrap;
   transition: 0.3s;
@@ -90,6 +90,7 @@
 .navbar .active:focus,
 .navbar li:hover > a {
   font-weight: 600;
+  color: var(--bluebold);
 }
 
 .navbar .getstarted,

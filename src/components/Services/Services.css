@@ -1,3 +1,41 @@
+.service-title {
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.service-title h3 {
+  color: var(--bluebold);
+  font-size: 32px;
+  position: relative;
+  font-weight: "Roboto-Medium";
+}
+
+.service-title h3:before,
+.service-title h3:after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: var(--bluebold);
+  display: inline-block;
+}
+
+.service-title h3:before {
+  margin: 0 15px 10px 0;
+}
+
+.service-title h3:after {
+  margin: 0 0 10px 15px;
+}
+
+.service-title p {
+  margin-bottom: 0;
+  font-family: "Roboto-Light";
+  color: var(--bluebold);
+  font-size: 16px;
+}
+.services {
+  margin: 100px 0;
+}
 .service-item {
   position: relative;
   height: 300px;
@@ -5,6 +43,7 @@
   background: #ffffff;
   box-shadow: 0 0 45px rgba(0, 0, 0, 0.08);
   transition: 0.5s;
+  border-radius: 5px;
 }
 .service-item:hover {
   background: var(--bluebold);
@@ -67,4 +106,21 @@
 .service-item:hover a.btn::before {
   width: 100%;
   background: var(--light);
+}
+@media (max-width: 575px) {
+  .service-title h3 {
+    color: var(--bluebold);
+    font-size: 26px;
+    position: relative;
+    font-weight: "Roboto-Medium";
+  }
+  .service-title p {
+    margin-bottom: 0;
+    font-family: "Roboto-Light";
+    color: var(--bluebold);
+    font-size: 14px;
+  }
+  .services {
+    margin: 10px 0;
+  }
 }

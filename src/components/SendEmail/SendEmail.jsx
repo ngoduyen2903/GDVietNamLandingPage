@@ -1,11 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./SendEmail.css";
 import NewLetter from '../../img/email-removebg-preview.png';
 import { BsSendFill } from "react-icons/bs";
 
 const SendEmail = () => {
   return (
-    <div className="container-xxl newsletter my-5">
+    <div className="container-xxl newsletter my-5" id="sendemail">
       <div className="container px-lg-5">
         <div className="row align-items-center" style={{ height: 250 }}>
           <div className="col-12 col-md-6">

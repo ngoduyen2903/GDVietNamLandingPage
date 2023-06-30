@@ -10,13 +10,13 @@ import { AiFillInstagram } from "react-icons/ai";
 import { MdEmail } from "react-icons/md";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { RiDoubleQuotesR } from "react-icons/ri";
-
+import { motion } from "framer-motion";
 
 const Team = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <section className="team">
+    <section className="team" id="team">
       <div className="container">
         <div className="row justify-content-center text-center">
           <div className="container section-title">
@@ -27,23 +27,29 @@ const Team = () => {
         <div className="row gy-5">
           <div className="col-lg-4 col-md-6 member" >
             <div className="member-img-container">
-              <div className="member-img">
-                <img src={ProfileImage2} className="img-fluid" alt="" />
-                <div className="social">
-                  <Link to="" smooth={true}>
-                    <FaTwitter />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <BsFacebook />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <AiFillInstagram />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <MdEmail />
-                  </Link>
+              <motion.div
+                initial={{ rotate: -90 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}>
+                <div className="member-img">
+                  <img src={ProfileImage2} className="img-fluid" alt="" />
+                  <div className="social">
+                    <Link to="" smooth={true}>
+                      <FaTwitter />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <BsFacebook />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <AiFillInstagram />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <MdEmail />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="member-info text-center">
               <h4>Nguyễn Ngọc Thảo Linh</h4>
@@ -53,23 +59,29 @@ const Team = () => {
           </div>
           <div className="col-lg-4 col-md-6 member">
             <div className="member-img-container">
-              <div className="member-img">
-                <img src={ProfileImage1} className="img-fluid" alt="" />
-                <div className="social">
-                  <Link to="" smooth={true}>
-                    <FaTwitter />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <BsFacebook />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <AiFillInstagram />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <MdEmail />
-                  </Link>
+              <motion.div
+                initial={{ rotate: -90 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}>
+                <div className="member-img">
+                  <img src={ProfileImage1} className="img-fluid" alt="" />
+                  <div className="social">
+                    <Link to="" smooth={true}>
+                      <FaTwitter />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <BsFacebook />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <AiFillInstagram />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <MdEmail />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="member-info text-center">
               <h4>Võ Nhựt Linh</h4>
@@ -79,23 +91,29 @@ const Team = () => {
           </div>
           <div className="col-lg-4 col-md-6 member">
             <div className="member-img-container">
-              <div className="member-img">
-                <img src={ProfileImage2} className="img-fluid" alt="" />
-                <div className="social">
-                  <Link to="" smooth={true}>
-                    <FaTwitter />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <BsFacebook />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <AiFillInstagram />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <MdEmail />
-                  </Link>
+              <motion.div
+                initial={{ rotate: -90 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}>
+                <div className="member-img">
+                  <img src={ProfileImage2} className="img-fluid" alt="" />
+                  <div className="social">
+                    <Link to="" smooth={true}>
+                      <FaTwitter />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <BsFacebook />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <AiFillInstagram />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <MdEmail />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="member-info text-center">
               <h4>Nguyễn Ngọc Mới</h4>
@@ -105,23 +123,29 @@ const Team = () => {
           </div>
           <div className="col-lg-4 col-md-6 member">
             <div className="member-img-container">
-              <div className="member-img">
-                <img src={ProfileImage1} className="img-fluid" alt="" />
-                <div className="social">
-                  <Link to="" smooth={true}>
-                    <FaTwitter />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <BsFacebook />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <AiFillInstagram />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <MdEmail />
-                  </Link>
+              <motion.div
+                initial={{ rotate: -90 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}>
+                <div className="member-img">
+                  <img src={ProfileImage1} className="img-fluid" alt="" />
+                  <div className="social">
+                    <Link to="" smooth={true}>
+                      <FaTwitter />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <BsFacebook />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <AiFillInstagram />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <MdEmail />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="member-info text-center">
               <h4>Huỳnh Tấn Dũng</h4>
@@ -131,23 +155,29 @@ const Team = () => {
           </div>
           <div className="col-lg-4 col-md-6 member" >
             <div className="member-img-container">
-              <div className="member-img">
-                <img src={ProfileImage1} className="img-fluid" alt="" />
-                <div className="social">
-                  <Link to="" smooth={true}>
-                    <FaTwitter />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <BsFacebook />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <AiFillInstagram />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <MdEmail />
-                  </Link>
+              <motion.div
+                initial={{ rotate: -90 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}>
+                <div className="member-img">
+                  <img src={ProfileImage1} className="img-fluid" alt="" />
+                  <div className="social">
+                    <Link to="" smooth={true}>
+                      <FaTwitter />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <BsFacebook />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <AiFillInstagram />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <MdEmail />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="member-info text-center">
               <h4>Lê Duy Lam</h4>
@@ -157,23 +187,29 @@ const Team = () => {
           </div>
           <div className="col-lg-4 col-md-6 member">
             <div className="member-img-container">
-              <div className="member-img">
-                <img src={ProfileImage2} className="img-fluid" alt="" />
-                <div className="social">
-                  <Link to="" smooth={true}>
-                    <FaTwitter />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <BsFacebook />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <AiFillInstagram />
-                  </Link>
-                  <Link to="" smooth={true}>
-                    <MdEmail />
-                  </Link>
+              <motion.div
+                initial={{ rotate: -90 }}
+                whileInView={{ rotate: 0 }}
+                viewport={{ margin: "-40px" }}
+                transition={{ duration: 3.5, type: "spring" }}>
+                <div className="member-img">
+                  <img src={ProfileImage2} className="img-fluid" alt="" />
+                  <div className="social">
+                    <Link to="" smooth={true}>
+                      <FaTwitter />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <BsFacebook />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <AiFillInstagram />
+                    </Link>
+                    <Link to="" smooth={true}>
+                      <MdEmail />
+                    </Link>
+                  </div>
                 </div>
-              </div>
+              </motion.div>
             </div>
             <div className="member-info text-center">
               <h4>Nguyễn Ngọc Thảo Linh</h4>

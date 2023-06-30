@@ -137,4 +137,11 @@
     font-family: "Roboto-Light";
     margin-bottom: 30px;
   }
+  .solution {
+    margin: 5px 0;
+  }
+  .layout_padding {
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
 }

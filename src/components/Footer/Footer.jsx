@@ -39,7 +39,8 @@ const Footer = () => {
             <div className="col-lg-2 col-6 footer-links"></div>
             <div className="col-lg-2 col-6 footer-links"></div>
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-              <p style={{ color: darkMode ? "#066AC9" : "" }}>
+              <h4></h4>
+              <p style={{ color: darkMode ? "#2124B1" : "" }}>
                 <strong>Phone:</strong> 0799 552 667<br />
                 <strong>Email:</strong> info@gdvietnam.com<br />
               </p>
@@ -49,7 +50,7 @@ const Footer = () => {
       </div>
       <div className="container">
         <div className="copyright">
-          <p>&copy; Copyrights ©2023 GD Việt Nam. All rights reserved</p>
+          <p style={{ color: darkMode ? "#fff" : "" }}>&copy; Copyrights ©2023 GD Việt Nam. All rights reserved</p>
         </div>
       </div>
     </footer>

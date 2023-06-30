@@ -15,13 +15,7 @@ function App() {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div
-      className="App"
-      style={{
-        background: darkMode ? "black" : "",
-        color: darkMode ? "white" : "",
-      }}
-    >
+    <div className="App" style={{ background: darkMode ? "#222529" : "", color: darkMode ? "white" : "", }}>
       <Navbar />
       <Introduce />
       <About />

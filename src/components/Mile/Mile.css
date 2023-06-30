@@ -1,3 +1,38 @@
+.mile-title {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.mile-title h3 {
+    color: var(--bluebold);
+    font-size: 32px;
+    position: relative;
+    font-weight: "Roboto-Medium";
+}
+
+.mile-title h3:before,
+.mile-title h3:after {
+    content: "";
+    width: 20px;
+    height: 2px;
+    background: var(--bluebold);
+    display: inline-block;
+}
+
+.mile-title h3:before {
+    margin: 0 15px 10px 0;
+}
+
+.mile-title h3:after {
+    margin: 0 0 10px 15px;
+}
+
+.mile-title p {
+    margin-bottom: 0;
+    font-family: "Roboto-Light";
+    color: var(--bluebold);
+    font-size: 16px;
+}
 .mile {
     margin: 100px 0;
 }
@@ -133,7 +168,6 @@
         position: absolute;
         left: 0%;
         top: 60px;
-        /*transform: translateX(-50%;);*/
     }
     .timeline-nodes:nth-child(odd) .timeline-content::after {
         content: "";
@@ -194,5 +228,17 @@
     }
     .mile {
         margin: 100px 5px;
+    }
+    .mile-title h3 {
+        color: var(--bluebold);
+        font-size: 18px;
+        position: relative;
+        font-weight: "Roboto-Medium";
+    }
+    .mile-title p {
+        margin-bottom: 0;
+        font-family: "Roboto-Light";
+        color: var(--bluebold);
+        font-size: 12px;
     }
 }
