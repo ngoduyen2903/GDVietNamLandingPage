@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Solution.css";
-import SolutionImage1 from "../../img/so1.png";
-import SolutionImage2 from "../../img/so2.png";
-import SolutionImage3 from "../../img/so3.png";
-import SolutionImage4 from "../../img/so4.png";
-import SolutionImage5 from "../../img/so1.png";
+import SolutionImage1 from "../../img/data-science.png";
+import SolutionImage2 from "../../img/programming.png";
+import SolutionImage3 from "../../img/profit.png";
+import SolutionImage4 from "../../img/artist.png";
+import SolutionImage5 from "../../img/online-lesson.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from 'react-scroll';
@@ -13,7 +13,7 @@ const Solution = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <section className="solution layout_padding" id="solution">
+    <section className="solution layout_padding" id="solution" style={{ backgroundColor: darkMode ? "#222529" : "" }}>
       <div className="container">
         <div className="row">
           <div className="w-sleft col-md-6">

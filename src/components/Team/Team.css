@@ -1,13 +1,17 @@
+.team {
+  padding: 100px 0;
+  
+}
 .section-title {
   text-align: center;
   padding-bottom: 60px;
 }
 
 .section-title h3 {
-  color: #274685;
+  color: var(--bluebold);
   font-size: 32px;
   position: relative;
-  font-weight: "Roboto-Medium";
+  font-family: 'Roboto-Bold';
 }
 
 .section-title h3:before,
@@ -29,14 +33,9 @@
 
 .section-title p {
   margin-bottom: 0;
-  font-family: "Roboto-Light";
-  color: #274685;
+  font-family: "Roboto-Regular";
+  color: var(--bluebold);
   font-size: 16px;
-}
-
-.team {
-  background-color: #f4f4f4;
-  padding: 50px 0;
 }
 
 .team .member {
@@ -48,15 +47,17 @@
   border-radius: 50%;
   overflow: hidden;
   position: relative;
-  border: 2px solid var(--white);
+  border: 3px solid var(--white);
   box-shadow: 0 15px 35px -10px rgba(0, 0, 0, 0.2);
 }
 .team .member .member-img-container {
-  padding: 28px;
-  background-image: url(../../img/72\ DPI\ -02-01.png);
+  border-radius: 10px;
+  padding: 15px;
+  background-color: #ececeb;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 10px 30%;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .team .member .member-img img {
@@ -80,25 +81,25 @@
 
 .team .member .member-img .social a {
   transition: 0.3s;
-  color: var(--white);
+  color: var(--bluebold);
   font-size: 20px;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .team .member .member-img .social a:hover {
-  color: var(--bluebold);
+  color: var(--gray);
 }
 
 .team .member .member-info {
-  margin-top: 30px;
+  padding: 30px 0px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 
 .team .member .member-info h4 {
   color: var(--bluebold);
-  margin-bottom: 12px;
-  font-size: 16px;
-  font-family: "Roboto-Medium";
+  font-size: 18px;
+  font-family: "Roboto-Bold";
 }
 
 .team .member .member-info span {
@@ -106,13 +107,12 @@
   display: block;
   font-size: 14px;
   color: rgba(var(--gray), 0.6);
-  margin-bottom: 10px;
+  margin: 15px 0;
   font-family: "Roboto-Light";
 }
 
 .team .member .member-info p {
-  margin-bottom: 0;
-  font-size: 14px;
+  font-size: 13px;
   font-family: "Roboto-Regular";
   color: var(--gray);
 }
@@ -129,7 +129,7 @@
   }
 
   .section-title h3 {
-    color: #274685;
+    color: var(--bluebold);
     font-size: 20px;
     position: relative;
     font-family: "Roboto-Medium";
@@ -140,7 +140,7 @@
     content: "";
     width: 20px;
     height: 2px;
-    background: #274685;
+    background: var(--bluebold);
     display: inline-block;
   }
 
@@ -171,10 +171,10 @@
   }
 
   .section-title h3 {
-    color: #274685;
+    color: var(--bluebold);
     font-size: 20px;
     position: relative;
-    font-family: "Roboto-Medium";
+    font-family: "Roboto-Bold";
   }
 
   .section-title h3:before,
@@ -182,7 +182,7 @@
     content: "";
     width: 20px;
     height: 2px;
-    background: #274685;
+    background: var(--bluebold);
     display: inline-block;
   }
 
@@ -196,7 +196,7 @@
 
   .section-title p {
     margin-bottom: 0;
-    font-family: "Roboto-Light";
+    font-family: "Roboto-Regular";
     font-size: 14px;
   }
   .team .member .member-info p {
@@ -206,7 +206,6 @@
     color: var(--gray);
   }
   .team {
-    background-color: #f4f4f4;
     padding: 10px 0;
   }
 }

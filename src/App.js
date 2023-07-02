@@ -8,24 +8,41 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import SendEmail from "./components/SendEmail/SendEmail";
-import { useContext } from "react";
+import { useContext, useState, useEffect } from "react";
 import { themeContext } from "./Context";
 import Solution from "./components/Solution/Solution";
+import Reviews from "./components/Reviews/Reviews";
+import GridLoader from "react-spinners/GridLoader";
+
 function App() {
+  const [loading, setLoading] = useState(false)
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1500)
+  }, [])
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
     <div className="App" style={{ background: darkMode ? "#222529" : "", color: darkMode ? "white" : "", }}>
-      <Navbar />
-      <Introduce />
-      <About />
-      <Services />
-      <Mile />
-      <Team />
-      <Solution />
-      <Contact />
-      <SendEmail />
-      <Footer />
+      {
+        loading ?
+          <GridLoader color={'#2124b1'} loading={loading} size={25} className="Loading" /> :
+          <div>
+            <Navbar />
+            <Introduce />
+            <About />
+            <Services />
+            <Mile />
+            <Reviews />
+            <Team />
+            <Solution />
+            <Contact />
+            <SendEmail />
+            <Footer />
+          </div>
+      }
     </div>
   );
 }

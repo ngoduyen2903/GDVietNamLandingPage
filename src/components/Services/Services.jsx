@@ -13,9 +13,8 @@ import { Link } from "react-scroll";
 const Services = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
-
   return (
-    <section id="services" className="services">
+    <section id="services" className="services" style={{ backgroundColor: darkMode ? "#222529" : "" }}>
       <div className="container">
         <div className="row justify-content-center text-center">
           <div className="container service-title">

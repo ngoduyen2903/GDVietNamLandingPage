@@ -47,6 +47,7 @@
 .header .logo img {
   max-height: 40px;
   margin-right: 6px;
+  cursor: pointer;
 }
 .navbar {
   padding: 0;
@@ -62,50 +63,56 @@
 
 .navbar li {
   position: relative;
+  color: var(--bluebold);
 }
-
 .navbar a,
 .navbar a:focus {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-family: "Roboto-Medium";
-  font-size: 15px;
+  font-family: "Roboto-Bold";
+  font-size: 16px;
   color: var(--bluebold);
-  white-space: nowrap;
-  transition: 0.3s;
   cursor: pointer;
 }
-
-.navbar a i,
-.navbar a:focus i {
-  font-size: 12px;
-  line-height: 0;
-  margin-left: 5px;
-}
-
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
-  font-weight: 600;
-  color: var(--bluebold);
-}
-
-.navbar .getstarted,
-.navbar .getstarted:focus {
-  background: var(--bluebold);
-  padding: 8px 20px;
-  margin-left: 30px;
-  border-radius: 4px;
-  color: #fff;
-}
-
-.navbar .getstarted:hover,
-.navbar .getstarted:focus:hover {
-  color: #fff;
-  background: var(--bluebold);
+.navbar .active {
+  font-family: "Roboto-Regular";
+  cursor: pointer;
+  position: relative;
+  background: white;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  transition: all 1s;
+  &:after,
+  &:before {
+    content: " ";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 0px solid var(--bluebold);
+    transition: all 1s;
+  }
+  &:after {
+    top: 5px;
+    left: 5px;
+    border-top: 3px solid var(--bluebold);
+    border-left: 3px solid var(--bluebold);
+  }
+  &:before {
+    bottom: 5px;
+    right: 5px;
+    border-bottom: 3px solid var(--bluebold);
+    border-right: 3px solid var(--bluebold);
+  }
+  &:hover {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    &:before,
+    &:after {
+      width: 50%;
+      height: 50%;
+    }
+  }
 }
 .mobile-nav-toggle {
   color: var(--bluebold);

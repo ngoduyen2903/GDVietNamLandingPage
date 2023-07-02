@@ -9,7 +9,7 @@ const SendEmail = () => {
       <div className="container px-lg-5">
         <div className="row align-items-center" style={{ height: 250 }}>
           <div className="col-12 col-md-6">
-            <h4 style={{ fontFamily: 'Roboto-Medium', color: '#fff' }}>Sẵn sàng để bắt đầu</h4>
+            <h4 className="mt-2" style={{ fontFamily: 'Roboto-Medium', color: '#fff' }}>Sẵn sàng để bắt đầu</h4>
             <small style={{ fontFamily: 'Roboto-Light', color: '#fff', fontSize: 16 }}>Cung cấp email để cập nhật thông tin mới nhất</small>
             <div className="position-relative w-100 mt-3">
               <input className="form-control border-0 rounded-pill w-100 ps-3 pe-5 mb-5" type="text" placeholder="Nhập email của bạn" style={{ padding: 12, fontSize: 14, fontFamily: 'Roboto-Light' }} />

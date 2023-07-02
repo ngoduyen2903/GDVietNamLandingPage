@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext } from "react";
 import "./Mile.css";
 import MileImage1 from '../../img/software-development.png';
 import MileImage2 from '../../img/api.png';

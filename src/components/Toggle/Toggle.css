@@ -5,7 +5,7 @@
     position: relative;
     padding: 5px 4px;
     cursor: pointer;
-    background: var(--bluebold);
+    background-image: linear-gradient(to right, blue, #2125b1);
 }
 .toggle > * {
     width: 1rem;

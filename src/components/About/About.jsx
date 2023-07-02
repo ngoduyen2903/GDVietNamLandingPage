@@ -10,7 +10,7 @@ const About = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
-        <section id="about" className="about_section layout_padding">
+        <section id="about" className="about_section layout_padding" >
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">

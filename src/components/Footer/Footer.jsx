@@ -22,18 +22,10 @@ const Footer = () => {
               </div>
               <p>Công ty Cổ phần Giải pháp Công nghệ GD Việt Nam đi đầu trong lĩnh vực số hóa, chuyển đổi số. Chúng tôi chuyên cung cấp giải pháp và các phần mềm theo yêu cầu. Với đội ngũ kĩ thuật chuyên môn cao từ khâu thiết kế đến tư vấn, nghiên cứu, phân tích và tạo ra các sản phẩm tối ưu nhất.</p>
               <div className="social-links mt-3">
-                <Link to="">
-                  <AiFillTwitterCircle />
-                </Link>
-                <Link to="">
-                  <AiOutlineFacebook />
-                </Link>
-                <Link to="">
-                  <AiFillYoutube />
-                </Link>
-                <Link to="">
-                  <AiOutlineInstagram />
-                </Link>
+                <Link to=""><AiFillTwitterCircle /></Link>
+                <Link to=""><AiOutlineFacebook /></Link>
+                <Link to=""><AiFillYoutube /></Link>
+                <Link to=""><AiOutlineInstagram /></Link>
               </div>
             </div>
             <div className="col-lg-2 col-6 footer-links"></div>

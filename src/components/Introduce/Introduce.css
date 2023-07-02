@@ -49,7 +49,7 @@
   animation: moveInLeft 1s ease-out;
 }
 .btn-hover.color-1:hover {
-  background-image: linear-gradient(to right, #105ba6, blue);
+  background-image: linear-gradient(to right, blue, #2125b1);
   color: #fff;
 }
 a .video-icon {
@@ -66,7 +66,7 @@ a .video-icon {
 }
 
 .center {
-  animation: moveInLeft 2s ease-out;
+  animation: moveInLeft 3s ease-out;
 }
 .center h2 {
   color: rgba(255, 0, 0, 0.1);

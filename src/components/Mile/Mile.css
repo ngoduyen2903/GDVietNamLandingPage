@@ -1,13 +1,16 @@
+.mile {
+    padding: 50px 0;
+}
 .mile-title {
     text-align: center;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
 }
 
 .mile-title h3 {
     color: var(--bluebold);
     font-size: 32px;
     position: relative;
-    font-weight: "Roboto-Medium";
+    font-family: "Roboto-Bold";
 }
 
 .mile-title h3:before,
@@ -29,15 +32,12 @@
 
 .mile-title p {
     margin-bottom: 0;
-    font-family: "Roboto-Light";
+    font-family: "Roboto-Regular";
     color: var(--bluebold);
     font-size: 16px;
 }
-.mile {
-    margin: 100px 0;
-}
 .timeline {
-    padding: 50px 0;
+    padding: 50px 0px;
     position: relative;
 }
 .timeline-nodes {
@@ -47,24 +47,20 @@
 .timeline-nodes:nth-child(even) {
     flex-direction: row-reverse;
 }
-.timeline h3,
 .timeline p {
     padding: 5px 15px;
+    font-family: "Roboto-Light";
+    font-size: 14px;
 }
 .timeline h3 {
+    padding: 5px 15px;
     background: var(--bluebold);
-    font-family: "Roboto-Light";
-    font-size: 22px;
+    font-family: "Roboto-Medium";
+    font-size: 24px;
 }
-.timeline p {
-    color: var(--bluebold);
-    font-size: 14px;
-    font-family: "Roboto-Regular";
-}
+.timeline p,
 .timeline time {
     color: var(--bluebold);
-    font-size: 18px;
-    font-family: "Roboto-Medium";
 }
 .timeline::before {
     content: "";
@@ -79,7 +75,7 @@
     transform: translateX(-50%);
 }
 .timeline-content {
-    border: 1px solid var(--bluebold);
+    border: 1px solid var(--blue);
     position: relative;
     border-radius: 0 0 10px 10px;
     box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
@@ -159,15 +155,20 @@
         transform: translateX(-50%);
     }
     .timeline h3 {
-        font-size: 1.7rem;
+        font-size: 14px;
     }
     .timeline p {
+        font-size: 12px;
+    }
+    time {
         font-size: 14px;
+        font-family: "Roboto-Bold";
     }
     .timeline-image {
         position: absolute;
         left: 0%;
         top: 60px;
+        transform: translateX(20%);
     }
     .timeline-nodes:nth-child(odd) .timeline-content::after {
         content: "";
@@ -195,50 +196,44 @@
         text-align: left;
     }
     .timeline-image::before {
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
+    }
+    .timeline {
+        padding: 0px 10px;
+        position: relative;
     }
 }
 
 @media (max-width: 575px) {
+    .mile-title h3 {
+        color: var(--bluebold);
+        font-size: 18px;
+        position: relative;
+        font-family: "Roboto-Bold";
+    }
     .timeline::before {
         content: "";
         display: block;
         position: absolute;
         top: 0;
-        left: 4%;
+        left: 3%;
     }
     .timeline-image {
         position: absolute;
-        left: -1%;
+        left: -5%;
     }
-    .timeline-image::before {
-        width: 55px;
-        height: 55px;
-    }
-    .timeline h3 {
-        background: var(--bluebold);
-        font-family: "Roboto-Light";
-        font-size: 18px;
-    }
-    .timeline p {
-        color: var(--bluebold);
-        font-size: 12px;
-        font-family: "Roboto-Regular";
-    }
-    .mile {
-        margin: 100px 5px;
-    }
-    .mile-title h3 {
-        color: var(--bluebold);
-        font-size: 18px;
+    .timeline {
+        padding: 0px 10px;
         position: relative;
-        font-weight: "Roboto-Medium";
+    }
+    .timeline-image img {
+        display: none;
     }
     .mile-title p {
         margin-bottom: 0;
-        font-family: "Roboto-Light";
+        font-family: "Roboto-Regular";
         color: var(--bluebold);
-        font-size: 12px;
+        font-size: 13px;
     }
 }

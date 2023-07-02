@@ -24,7 +24,7 @@
   float: left;
   font-size: 32px;
   color: var(--bluebold);
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Bold";
 }
 
 .about_text {
@@ -136,7 +136,7 @@
     float: left;
     font-size: 24px;
     color: var(--bluebold);
-    font-family: "Roboto-Medium";
+    font-family: "Roboto-Bold";
   }
   .about_text {
     width: 100%;
