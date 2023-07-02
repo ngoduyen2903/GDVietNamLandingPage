@@ -14,7 +14,7 @@ const SendEmail = () => {
             <div className="position-relative w-100 mt-3">
               <input className="form-control border-0 rounded-pill w-100 ps-3 pe-5 mb-5" type="text" placeholder="Nhập email của bạn" style={{ padding: 12, fontSize: 14, fontFamily: 'Roboto-Light' }} />
               <button type="button" className="btn shadow-none position-absolute top-0 end-0 mt-0 me-2 ">
-                <BsSendFill className="fs-5 mb-2" style={{ color: '#2125B1', fontSize: 16 }} />
+                <BsSendFill className="fs-5 mb-2" style={{ color: '#00509d', fontSize: 16 }} />
               </button>
             </div>
           </div>

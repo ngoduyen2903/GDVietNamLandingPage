@@ -67,7 +67,7 @@ const Team = () => {
                     transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Thảo Linh</h4>
-                      <span style={{ color: darkMode ? "#2124B1" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
+                      <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
                       <p><RiDoubleQuotesL />Phụ trách sản xuất video, hình ảnh, mô hình 3D<RiDoubleQuotesR /></p>
                     </div>
                   </motion.div>
@@ -113,7 +113,7 @@ const Team = () => {
                     transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Võ Nhựt Linh</h4>
-                      <span style={{ color: darkMode ? "#2124B1" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Cứng<MdKeyboardDoubleArrowRight /></span>
+                      <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Cứng<MdKeyboardDoubleArrowRight /></span>
                       <p><RiDoubleQuotesL />Phụ trách phần cứng, thiết bị công nghệ<RiDoubleQuotesR /></p>
                     </div>
                   </motion.div>
@@ -159,7 +159,7 @@ const Team = () => {
                     transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Lê Duy Lam</h4>
-                      <span style={{ color: darkMode ? "#2124B1" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Mềm<MdKeyboardDoubleArrowRight /></span>
+                      <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Mềm<MdKeyboardDoubleArrowRight /></span>
                       <p><RiDoubleQuotesL />Phụ trách phần mềm, thiết bị công nghệ<RiDoubleQuotesR /></p>
                     </div>
                   </motion.div>
@@ -205,7 +205,7 @@ const Team = () => {
                     transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Mới</h4>
-                      <span style={{ color: darkMode ? "#2124B1" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trợ Lý Ban Giám Đốc<MdKeyboardDoubleArrowRight /></span>
+                      <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trợ Lý Ban Giám Đốc<MdKeyboardDoubleArrowRight /></span>
                       <p><RiDoubleQuotesL />Phụ trách giấy phép, bản quyền sản phẩm<RiDoubleQuotesR /></p>
                     </div>
                   </motion.div>
@@ -251,7 +251,7 @@ const Team = () => {
                     transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Huỳnh Tấn Dũng</h4>
-                      <span style={{ color: darkMode ? "#2124B1" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Phó Phòng Kỹ Thuật<MdKeyboardDoubleArrowRight /></span>
+                      <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Phó Phòng Kỹ Thuật<MdKeyboardDoubleArrowRight /></span>
                       <p><RiDoubleQuotesL />Phụ trách phần mềm, thiết bị công nghệ<RiDoubleQuotesR /></p>
                     </div>
                   </motion.div>
@@ -297,7 +297,7 @@ const Team = () => {
                     transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Thảo Linh</h4>
-                      <span style={{ color: darkMode ? "#2124B1" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
+                      <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
                       <p><RiDoubleQuotesL />Phụ trách sản xuất video, hình ảnh, mô hình 3D<RiDoubleQuotesR /></p>
                     </div>
                   </motion.div>

@@ -88,16 +88,6 @@
   border-radius: 100%;
   z-index: 1;
 }
-.blueCircle {
-  background-image: linear-gradient(to right, blue, #2125b1);
-  left: 18rem;
-  top: 0rem;
-}
-.yellowCircle {
-  background-image: linear-gradient(to right, blue, #2125b1);
-  left: 18rem;
-  top: 8rem;
-}
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;

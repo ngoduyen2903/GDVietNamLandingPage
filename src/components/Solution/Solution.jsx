@@ -16,7 +16,7 @@ const Solution = () => {
     <section className="solution layout_padding" id="solution" style={{ backgroundColor: darkMode ? "#222529" : "" }}>
       <div className="container">
         <div className="row">
-          <div className="w-sleft col-md-6">
+          <div className="col-md-6">
             <div className="awesome">
               <span style={{ color: darkMode ? "white" : "" }} className="mt-5">
                 Tại sao nên chọn GD Việt Nam?
@@ -53,8 +53,6 @@ const Solution = () => {
                 <img src={SolutionImage5} alt="img-solution" />
               </div>
             </motion.div>
-            <div className="w-backCircle blueCircle"></div>
-            <div className="w-backCircle yellowCircle"></div>
           </div>
         </div>
       </div>

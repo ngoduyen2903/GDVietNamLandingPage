@@ -28,7 +28,7 @@ function App() {
     <div className="App" style={{ background: darkMode ? "#222529" : "", color: darkMode ? "white" : "", }}>
       {
         loading ?
-          <GridLoader color={'#2124b1'} loading={loading} size={25} className="Loading" /> :
+          <GridLoader color={'#00509d'} loading={loading} size={25} className="Loading" /> :
           <div>
             <Navbar />
             <Introduce />
