@@ -19,19 +19,12 @@ const Introduce = () => {
             </div>
             <div>
               <div className="text-center text-lg-start">
-                <Link to="about" smooth={true} >
-                  <button className="btn-hover color-1">Bắt đầu</button>
-                </Link>
-                <Link to="about" smooth={true}>
-                  <MdOutlinePlayCircleOutline className="video-icon" style={{ color: darkMode ? "#fff" : "" }} />
-                  <span className="video-text" style={{ color: darkMode ? "#fff" : "" }}>Xem Video</span>
-                </Link>
+                <Link to="about" smooth={true} ><button className="btn-hover color-1">Bắt đầu</button></Link>
+                <Link to="about" smooth={true}><MdOutlinePlayCircleOutline className="video-icon" style={{ color: darkMode ? "#fff" : "" }} /><span className="video-text" style={{ color: darkMode ? "#fff" : "" }}>Xem Video</span></Link>
               </div>
             </div>
           </div>
-          <div className="col-lg-6 introduce-img">
-            <img src={IntroduceImage} className="img-fluid" alt="Introduce" />
-          </div>
+          <div className="col-lg-6 introduce-img"><img src={IntroduceImage} className="img-fluid" alt="Introduce" /></div>
         </div>
       </div>
     </section>

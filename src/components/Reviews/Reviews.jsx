@@ -12,6 +12,7 @@ import Slider from "react-slick";
 const Reviews = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
+
     var settings = {
         dots: true,
         infinite: true,
@@ -41,25 +42,17 @@ const Reviews = () => {
                     <div className="col-lg-8">
                         <Slider {...settings}>
                             <div className="testimonial-item text-center">
-                                <motion.div
-                                    initial={{ rotate: 90 }}
-                                    whileInView={{ rotate: 0 }}
-                                    viewport={{ margin: "-40px" }}
-                                    transition={{ duration: 3, type: "spring" }}>
+                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                                     <img className="mx-auto mb-4" src={CustomerImage1} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p><FaQuoteLeft className="feedback-icon" />&nbsp;
                                     Tôi đã sử dụng sản phẩm và dịch vụ của công ty này trong một thời gian dài và tôi cảm thấy rất hài lòng với trải nghiệm của mình.
                                     &nbsp;<FaQuoteRight className="feedback-icon" /></p>
                                 <h5 style={{ color: darkMode ? "#fff" : "" }}>Khách hàng</h5>
-                                <span>Duyên Ngô</span>
+                                <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                             <div className="testimonial-item text-center">
-                                <motion.div
-                                    initial={{ rotate: 90 }}
-                                    whileInView={{ rotate: 0 }}
-                                    viewport={{ margin: "-40px" }}
-                                    transition={{ duration: 3, type: "spring" }}>
+                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                                     <img className="mx-auto mb-4" src={CustomerImage2} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p><FaQuoteLeft />&nbsp;
@@ -67,14 +60,10 @@ const Reviews = () => {
                                     &nbsp;<FaQuoteRight />
                                 </p>
                                 <h5 style={{ color: darkMode ? "#fff" : "" }}>Khách hàng</h5>
-                                <span>Cẩm Duyên</span>
+                                <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                             <div className="testimonial-item text-center">
-                                <motion.div
-                                    initial={{ rotate: 90 }}
-                                    whileInView={{ rotate: 0 }}
-                                    viewport={{ margin: "-40px" }}
-                                    transition={{ duration: 3, type: "spring" }}>
+                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                                     <img className="mx-auto mb-4" src={CustomerImage3} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p><FaQuoteLeft />&nbsp;
@@ -85,19 +74,16 @@ const Reviews = () => {
                                 <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                             <div className="testimonial-item text-center">
-                                <motion.div
-                                    initial={{ rotate: 90 }}
-                                    whileInView={{ rotate: 0 }}
-                                    viewport={{ margin: "-40px" }}
-                                    transition={{ duration: 3, type: "spring" }}>
+                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                                     <img className="mx-auto mb-4" src={CustomerImage1} alt="" style={{ width: 150 }} />
-                                </motion.div>                                            <p>
+                                </motion.div>
+                                <p>
                                     <FaQuoteLeft />&nbsp;
                                     Công ty GD Việt Nam cung cấp dịch vụ hỗ trợ khách hàng chuyên nghiệp và nhanh chóng. Tôi đã gặp một số vấn đề nhỏ khi sử dụng phần mềm, nhưng đội ngũ hỗ trợ đã giải quyết mọi vấn đề một cách nhanh chóng và hiệu quả. Họ luôn sẵn lòng lắng nghe và giải đáp mọi thắc mắc của tôi.
                                     &nbsp;<FaQuoteRight />
                                 </p>
                                 <h5 style={{ color: darkMode ? "#fff" : "" }}>Khách hàng</h5>
-                                <span>Duyên Ngô</span>
+                                <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                         </Slider>
                     </div>

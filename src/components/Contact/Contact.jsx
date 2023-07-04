@@ -26,15 +26,14 @@ const Contact = () => {
                   <div className="col-md-4">
                     <div id="map">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.6879321358015!2d105.76393380976376!3d10.042589672260725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31a08811b07be331%3A0x29d0ca37f83f61c!2zTE9UVEUgTWFydCBD4bqnbiBUaMah!5e0!3m2!1svi!2s!4v1688221791198!5m2!1svi!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d4384.412449449693!2d105.7841027254593!3d10.009556472869363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e2!4m3!3m2!1d10.0095434!2d105.7862948!4m5!1s0x31a0627e021b58e1%3A0x214c32d84ee4abd8!2zS2h1IGTDom4gY8awIE5hbSBMb25nLCAxMDAgUXVhbmcgVHJ1bmcsIEjGsG5nIFBow7osIEPDoWkgUsSDbmcsIEPhuqduIFRoxqEsIFZp4buHdCBOYW0!3m2!1d10.0097309!2d105.7870272!5e1!3m2!1svi!2s!4v1688348123223!5m2!1svi!2s"
                         width="100%"
                         height="540px"
                         style={{ border: 0, borderRadius: '23px' }}
                         allowFullScreen
                         loading="lazy"
                         referrerPolicy="no-referrer-when-downgrade"
-                        title="Google Maps"
-                      />
+                        title="Google Maps" />
                     </div>
                   </div>
                   <div className="col-md-8">
@@ -89,7 +88,7 @@ const Contact = () => {
                         <div className="col-md-4">
                           <div className="info-item">
                             <BiMap style={{ fontSize: 40, color: '#fff' }} />
-                            <h4><Link to="contact">Thành phố Cần Thơ</Link></h4>
+                            <h4><Link to="contact">A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ</Link></h4>
                           </div>
                         </div>
                       </div>

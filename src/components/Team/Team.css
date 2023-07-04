@@ -1,6 +1,5 @@
 .team {
   padding: 100px 0;
-  
 }
 .section-title {
   text-align: center;
@@ -11,7 +10,7 @@
   color: var(--bluebold);
   font-size: 32px;
   position: relative;
-  font-family: 'Roboto-Bold';
+  font-family: "Roboto-Bold";
 }
 
 .section-title h3:before,

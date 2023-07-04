@@ -25,33 +25,16 @@ const Solution = () => {
               <span>
                 Công ty Cổ phần Giải pháp Công nghệ GD Việt Nam đi đầu trong lĩnh vực số hóa, chuyển đổi số. Chúng tôi chuyên cung cấp giải pháp và các phần mềm theo yêu cầu. Với đội ngũ kĩ thuật chuyên môn cao từ khâu thiết kế đến tư vấn, nghiên cứu, phân tích và tạo ra các sản phẩm tối ưu nhất.
               </span>
-              <Link to="contact" smooth={true}>
-                <button className="btn-hover color-1">Xem thêm</button>
-              </Link>
+              <Link to="contact" smooth={true}><button className="btn-hover color-1">Xem thêm</button></Link>
             </div>
           </div>
           <div className="w-right col-md-6">
-            <motion.div
-              initial={{ rotate: -90 }}
-              whileInView={{ rotate: 0 }}
-              viewport={{ margin: "-40px" }}
-              transition={{ duration: 3.5, type: "spring" }}
-              className="w-mainCircle">
-              <div className="w-secCircle">
-                <img src={SolutionImage1} alt="img-solution" />
-              </div>
-              <div className="w-secCircle">
-                <img src={SolutionImage2} alt="img-solution" />
-              </div>
-              <div className="w-secCircle">
-                <img src={SolutionImage3} alt="img-solution" />
-              </div>{" "}
-              <div className="w-secCircle">
-                <img src={SolutionImage4} alt="img-solution" />
-              </div>
-              <div className="w-secCircle">
-                <img src={SolutionImage5} alt="img-solution" />
-              </div>
+            <motion.div initial={{ rotate: -90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3.5, type: "spring" }} className="w-mainCircle">
+              <div className="w-secCircle"><img src={SolutionImage1} alt="img-solution" /></div>
+              <div className="w-secCircle"><img src={SolutionImage2} alt="img-solution" /></div>
+              <div className="w-secCircle"><img src={SolutionImage3} alt="img-solution" /></div>
+              <div className="w-secCircle"><img src={SolutionImage4} alt="img-solution" /></div>
+              <div className="w-secCircle"><img src={SolutionImage5} alt="img-solution" /></div>
             </motion.div>
           </div>
         </div>

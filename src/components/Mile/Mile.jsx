@@ -21,12 +21,7 @@ const Milestones = () => {
         </div>
         <div className="timeline">
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div
-              initial={{ rotateX: -90 }}
-              whileInView={{ rotateX: 0 }}
-              viewport={{ margin: "-40px" }}
-              transition={{ duration: 1, type: "spring" }}
-              className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 1, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className="text-light">Thời điểm hiện tại</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>Hiện tại, GD Việt Nam có 5 team chính là Developers, Graphic Design, Content, Customer Service và Marketing với hơn 40 thành viên. Chúng tôi cùng chung sứ mệnh mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>
@@ -38,12 +33,7 @@ const Milestones = () => {
             </div>
           </div>
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div
-              initial={{ rotateX: -90 }}
-              whileInView={{ rotateX: 0 }}
-              viewport={{ margin: "-40px" }}
-              transition={{ duration: 2, type: "spring" }}
-              className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className=" text-light">Phát triển môi trường làm việc tốt nhất</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>GD Việt Nam chuyển về văn phòng mới với quy mô lớn hơn tọa lạc tại A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ nhằm tạo môi trường tốt nhất cho nhân viên để mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>
@@ -55,12 +45,7 @@ const Milestones = () => {
             </div>
           </div>
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div
-              initial={{ rotateX: -90 }}
-              whileInView={{ rotateX: 0 }}
-              viewport={{ margin: "-40px" }}
-              transition={{ duration: 3, type: "spring" }}
-              className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className=" text-light">Phát triển môi trường làm việc tốt nhất</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>GD Việt Nam chuyển về văn phòng mới với quy mô lớn hơn tọa lạc tại A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ nhằm tạo môi trường tốt nhất cho nhân viên để mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>
@@ -72,12 +57,7 @@ const Milestones = () => {
             </div>
           </div>
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div
-              initial={{ rotateX: -90 }}
-              whileInView={{ rotateX: 0 }}
-              viewport={{ margin: "-40px" }}
-              transition={{ duration: 4, type: "spring" }}
-              className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className=" text-light">Phát triển môi trường làm việc tốt nhất</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>GD Việt Nam chuyển về văn phòng mới với quy mô lớn hơn tọa lạc tại A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ nhằm tạo môi trường tốt nhất cho nhân viên để mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>

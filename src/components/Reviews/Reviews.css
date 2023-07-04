@@ -107,16 +107,16 @@
 }
 .slick-prev {
     left: -52px !important;
-  }
-  .slick-next:before,
-  .slick-prev:before {
+}
+.slick-next:before,
+.slick-prev:before {
     content: "" !important;
-  }
-  .next-slick-arrow,
-  .prev-slick-arrow {
+}
+.next-slick-arrow,
+.prev-slick-arrow {
     color: var(--bluebold);
     font-size: 40px;
-  }
+}
 @media (max-width: 575px) {
     .testimonial-item p {
         font-family: "Roboto-Regular";

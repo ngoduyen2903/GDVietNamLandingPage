@@ -10,7 +10,7 @@ const About = () => {
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
     return (
-        <section id="about" className="about_section layout_padding" >
+        <section id="about" className="about_section layout_padding">
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
@@ -19,11 +19,7 @@ const About = () => {
                         </div>
                     </div>
                     <div className="col-md-6">
-                        <motion.div
-                            initial={{ rotate: 45 }}
-                            whileInView={{ rotate: 0 }}
-                            viewport={{ margin: "-20px" }}
-                            transition={{ duration: 1 }}>
+                        <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-20px" }} transition={{ duration: 1 }}>
                             <h1 className="about_taital" style={{ color: darkMode ? "#fff" : "" }}>Hãy để chúng tôi giúp bạn</h1>
                         </motion.div>
                         <p className="about_text">
@@ -54,14 +50,8 @@ const About = () => {
                             </span>
                         </div>
                         <div className="read_bt_1">
-                            <motion.div
-                                initial={{ rotate: -45 }}
-                                whileInView={{ rotate: 0 }}
-                                viewport={{ margin: "-25px" }}
-                                transition={{ duration: 1 }}>
-                                <Link to="services" smooth={true}>
-                                    <button className="btn-hover color-1" style={{ marginTop: 20 }}>Xem thêm</button>
-                                </Link>
+                            <motion.div initial={{ rotate: -45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-25px" }} transition={{ duration: 1 }}>
+                                <Link to="services" smooth={true}><button className="btn-hover color-1" style={{ marginTop: 20 }}>Xem thêm</button></Link>
                             </motion.div>
                         </div>
                     </div>

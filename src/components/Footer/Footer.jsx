@@ -18,21 +18,21 @@ const Footer = () => {
           <div className="row gy-4">
             <div className="col-lg-5 col-md-12 footer-info">
               <div className="logo d-flex align-items-center">
-                <img src={MainLogo} alt="" />
+                <img src={MainLogo} alt="Logo" />
               </div>
               <p>Công ty Cổ phần Giải pháp Công nghệ GD Việt Nam đi đầu trong lĩnh vực số hóa, chuyển đổi số. Chúng tôi chuyên cung cấp giải pháp và các phần mềm theo yêu cầu. Với đội ngũ kĩ thuật chuyên môn cao từ khâu thiết kế đến tư vấn, nghiên cứu, phân tích và tạo ra các sản phẩm tối ưu nhất.</p>
               <div className="social-links mt-3">
-                <Link to=""><AiFillTwitterCircle /></Link>
-                <Link to=""><AiOutlineFacebook /></Link>
-                <Link to=""><AiFillYoutube /></Link>
-                <Link to=""><AiOutlineInstagram /></Link>
+                <Link to="contact"><AiFillTwitterCircle /></Link>
+                <Link to="contact"><AiOutlineFacebook /></Link>
+                <Link to="contact"><AiFillYoutube /></Link>
+                <Link to="contact"><AiOutlineInstagram /></Link>
               </div>
             </div>
             <div className="col-lg-2 col-6 footer-links"></div>
             <div className="col-lg-2 col-6 footer-links"></div>
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
               <h4></h4>
-              <p style={{ color: darkMode ? "#2124B1" : "" }}>
+              <p style={{ color: darkMode ? "#00509d" : "" }}>
                 <strong>Phone:</strong> 0799 552 667<br />
                 <strong>Email:</strong> info@gdvietnam.com<br />
               </p>

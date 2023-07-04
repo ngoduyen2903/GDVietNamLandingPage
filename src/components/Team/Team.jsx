@@ -32,27 +32,15 @@ const Team = () => {
           <div className="col-lg-4 col-md-6 member" >
             <Carousel data-bs-theme="dark">
               <Carousel.Item interval={5000}>
-                <motion.div
-                  initial={{ rotate: 45 }}
-                  whileInView={{ rotate: 0 }}
-                  viewport={{ margin: "-40px" }}
-                  transition={{ duration: 4, type: "spring" }}>
+                <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }}>
                   <div className="member-img-container">
                     <div className="member-img">
                       <img src={MemberImage1} className="img-fluid" alt="" />
                       <div className="social">
-                        <Link to="" smooth={true}>
-                          <FaTwitter />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <BsFacebook />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <AiFillInstagram />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <MdEmail />
-                        </Link>
+                        <Link to="contact" smooth={true}><FaTwitter /></Link>
+                        <Link to="contact" smooth={true}><BsFacebook /></Link>
+                        <Link to="contact" smooth={true}><AiFillInstagram /></Link>
+                        <Link to="contact" smooth={true}><MdEmail /></Link>
                       </div>
                     </div>
                   </div>
@@ -60,11 +48,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Thảo Linh</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
@@ -79,26 +63,14 @@ const Team = () => {
             <Carousel>
               <Carousel.Item interval={5000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 3, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                     <div className="member-img">
                       <img src={MemberImage2} className="img-fluid" alt="" />
                       <div className="social">
-                        <Link to="" smooth={true}>
-                          <FaTwitter />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <BsFacebook />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <AiFillInstagram />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <MdEmail />
-                        </Link>
+                        <Link to="contact" smooth={true}><FaTwitter /></Link>
+                        <Link to="contact" smooth={true}><BsFacebook /></Link>
+                        <Link to="contact" smooth={true}><AiFillInstagram /></Link>
+                        <Link to="contact" smooth={true}><MdEmail /></Link>
                       </div>
                     </div>
                   </motion.div>
@@ -106,11 +78,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Võ Nhựt Linh</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Cứng<MdKeyboardDoubleArrowRight /></span>
@@ -125,26 +93,14 @@ const Team = () => {
             <Carousel>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 3, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                     <div className="member-img">
                       <img src={MemberImage3} className="img-fluid" alt="" />
                       <div className="social">
-                        <Link to="" smooth={true}>
-                          <FaTwitter />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <BsFacebook />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <AiFillInstagram />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <MdEmail />
-                        </Link>
+                        <Link to="contact" smooth={true}><FaTwitter /></Link>
+                        <Link to="contact" smooth={true}><BsFacebook /></Link>
+                        <Link to="contact" smooth={true}><AiFillInstagram /></Link>
+                        <Link to="contact" smooth={true}><MdEmail /></Link>
                       </div>
                     </div>
                   </motion.div>
@@ -152,11 +108,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={5000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Lê Duy Lam</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Mềm<MdKeyboardDoubleArrowRight /></span>
@@ -171,26 +123,14 @@ const Team = () => {
             <Carousel>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 3, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                     <div className="member-img">
                       <img src={MemberImage1} className="img-fluid" alt="" />
                       <div className="social">
-                        <Link to="" smooth={true}>
-                          <FaTwitter />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <BsFacebook />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <AiFillInstagram />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <MdEmail />
-                        </Link>
+                        <Link to="contact" smooth={true}><FaTwitter /></Link>
+                        <Link to="contact" smooth={true}><BsFacebook /></Link>
+                        <Link to="contact" smooth={true}><AiFillInstagram /></Link>
+                        <Link to="contact" smooth={true}><MdEmail /></Link>
                       </div>
                     </div>
                   </motion.div>
@@ -198,11 +138,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Mới</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trợ Lý Ban Giám Đốc<MdKeyboardDoubleArrowRight /></span>
@@ -217,26 +153,14 @@ const Team = () => {
             <Carousel>
               <Carousel.Item interval={5000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 3, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                     <div className="member-img">
                       <img src={MemberImage3} className="img-fluid" alt="" />
                       <div className="social">
-                        <Link to="" smooth={true}>
-                          <FaTwitter />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <BsFacebook />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <AiFillInstagram />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <MdEmail />
-                        </Link>
+                        <Link to="contact" smooth={true}><FaTwitter /></Link>
+                        <Link to="contact" smooth={true}><BsFacebook /></Link>
+                        <Link to="contact" smooth={true}><AiFillInstagram /></Link>
+                        <Link to="contact" smooth={true}><MdEmail /></Link>
                       </div>
                     </div>
                   </motion.div>
@@ -244,11 +168,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={5000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Huỳnh Tấn Dũng</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Phó Phòng Kỹ Thuật<MdKeyboardDoubleArrowRight /></span>
@@ -263,26 +183,14 @@ const Team = () => {
             <Carousel>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 3, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
                     <div className="member-img">
                       <img src={MemberImage2} className="img-fluid" alt="" />
                       <div className="social">
-                        <Link to="" smooth={true}>
-                          <FaTwitter />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <BsFacebook />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <AiFillInstagram />
-                        </Link>
-                        <Link to="" smooth={true}>
-                          <MdEmail />
-                        </Link>
+                        <Link to="contact" smooth={true}><FaTwitter /></Link>
+                        <Link to="contact" smooth={true}><BsFacebook /></Link>
+                        <Link to="contact" smooth={true}><AiFillInstagram /></Link>
+                        <Link to="contact" smooth={true}><MdEmail /></Link>
                       </div>
                     </div>
                   </motion.div>
@@ -290,11 +198,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div
-                    initial={{ rotate: 45 }}
-                    whileInView={{ rotate: 0 }}
-                    viewport={{ margin: "-40px" }}
-                    transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Thảo Linh</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
