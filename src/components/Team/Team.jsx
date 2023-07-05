@@ -48,7 +48,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Thảo Linh</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Thiết Kế Đồ Họa<MdKeyboardDoubleArrowRight /></span>
@@ -78,7 +78,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Võ Nhựt Linh</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Cứng<MdKeyboardDoubleArrowRight /></span>
@@ -108,7 +108,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={5000}>
                 <div className="member-img-container">
-                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Lê Duy Lam</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trưởng Phòng Phần Mềm<MdKeyboardDoubleArrowRight /></span>
@@ -138,7 +138,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={4000}>
                 <div className="member-img-container">
-                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Nguyễn Ngọc Mới</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Trợ Lý Ban Giám Đốc<MdKeyboardDoubleArrowRight /></span>
@@ -168,7 +168,7 @@ const Team = () => {
               </Carousel.Item>
               <Carousel.Item interval={5000}>
                 <div className="member-img-container">
-                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }}>
+                  <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }}>
                     <div className="member-info text-center">
                       <h4>Huỳnh Tấn Dũng</h4>
                       <span style={{ color: darkMode ? "#00509d" : "" }}><MdOutlineKeyboardDoubleArrowLeft />Phó Phòng Kỹ Thuật<MdKeyboardDoubleArrowRight /></span>

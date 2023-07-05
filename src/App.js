@@ -13,6 +13,7 @@ import { themeContext } from "./Context";
 import Solution from "./components/Solution/Solution";
 import Reviews from "./components/Reviews/Reviews";
 import GridLoader from "react-spinners/GridLoader";
+import Testimonials from "./components/Testimonials/Testimonials";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -38,6 +39,7 @@ function App() {
             <Reviews />
             <Team />
             <Solution />
+            <Testimonials />
             <Contact />
             <SendEmail />
             <Footer />

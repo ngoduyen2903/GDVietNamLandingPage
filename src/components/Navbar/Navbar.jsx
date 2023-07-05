@@ -18,6 +18,7 @@ const Navbar = () => {
             <li><Link to="feedback" spy={true} smooth={true} offset={-70} duration={200} className="nav-link">Đánh giá</Link></li>
             <li><Link to="team" spy={true} smooth={true} offset={-70} duration={200} className="nav-link">Đội ngũ</Link></li>
             <li><Link to="solution" spy={true} smooth={true} offset={-70} duration={200} className="nav-link">Giải pháp</Link></li>
+            <li><Link to="testimonials" spy={true} smooth={true} offset={-70} duration={200} className="nav-link">Khảo sát</Link></li>
             <li><Link to="contact" spy={true} smooth={true} offset={-70} duration={200} className="nav-link">Liên hệ</Link></li>
           </ul>&emsp;&nbsp;
           <Toggle className="nav-link mobile-nav-toggle" />
