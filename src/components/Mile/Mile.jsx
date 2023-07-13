@@ -8,6 +8,30 @@ import { motion } from "framer-motion";
 import { themeContext } from "../../Context";
 
 const Milestones = () => {
+  const motionHorizontal = {
+    initial: { rotateY: -90 },
+    whileInView: { rotateY: 0 },
+    viewport: { margin: "0px" },
+    transition: { duration: 1 }
+  };
+  const motionVertical = {
+    initial: { rotateX: -90 },
+    whileInView: { rotateX: 0 },
+    viewport: { margin: "0px" },
+    transition: { duration: 1 }
+  };
+  const motionLeft = {
+    initial: { x: "-50%" },
+    whileInView: { x: "0%" },
+    viewport: { margin: "0px" },
+    transition: { duration: 1 }
+  }
+  const motionRight = {
+    initial: { x: "50%" },
+    whileInView: { x: "0%" },
+    viewport: { margin: "0px" },
+    transition: { duration: 1 }
+  }
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
@@ -15,13 +39,17 @@ const Milestones = () => {
       <div className="container">
         <div className="row justify-content-center text-center">
           <div className="container mile-title">
-            <h3 style={{ color: darkMode ? "#fff" : "" }}>CÂU CHUYỆN CỦA CHÚNG TÔI</h3>
-            <p style={{ color: darkMode ? "#fff" : "" }}>Quá trình phát triển của GD Việt Nam</p>
+            <motion.h3 style={{ color: darkMode ? "#fff" : "" }} {...motionVertical}>
+              CÂU CHUYỆN CỦA CHÚNG TÔI
+            </motion.h3>
+            <motion.p style={{ color: darkMode ? "#fff" : "" }} {...motionVertical}>
+              Quá trình phát triển của GD Việt Nam
+            </motion.p>
           </div>
         </div>
         <div className="timeline">
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 1, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div {...motionVertical} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className="text-light">Thời điểm hiện tại</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>Hiện tại, GD Việt Nam có 5 team chính là Developers, Graphic Design, Content, Customer Service và Marketing với hơn 40 thành viên. Chúng tôi cùng chung sứ mệnh mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>
@@ -33,7 +61,7 @@ const Milestones = () => {
             </div>
           </div>
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 2, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div {...motionVertical} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className=" text-light">Phát triển môi trường làm việc tốt nhất</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>GD Việt Nam chuyển về văn phòng mới với quy mô lớn hơn tọa lạc tại A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ nhằm tạo môi trường tốt nhất cho nhân viên để mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>
@@ -45,7 +73,7 @@ const Milestones = () => {
             </div>
           </div>
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div {...motionVertical} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className=" text-light">Phát triển môi trường làm việc tốt nhất</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>GD Việt Nam chuyển về văn phòng mới với quy mô lớn hơn tọa lạc tại A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ nhằm tạo môi trường tốt nhất cho nhân viên để mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>
@@ -57,7 +85,7 @@ const Milestones = () => {
             </div>
           </div>
           <div className="row no-gutters justify-content-end justify-content-md-around align-items-start  timeline-nodes">
-            <motion.div initial={{ rotateX: -90 }} whileInView={{ rotateX: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 4, type: "spring" }} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
+            <motion.div {...motionVertical} className="col-10 col-md-5 order-3 order-md-1 timeline-content">
               <h3 className=" text-light">Phát triển môi trường làm việc tốt nhất</h3>
               <p style={{ color: darkMode ? "#fff" : "" }}>GD Việt Nam chuyển về văn phòng mới với quy mô lớn hơn tọa lạc tại A1-48, đường số 5, KDC Nam Long, P. Hưng Thạnh, Q. Cái Răng, TP. Cần Thơ nhằm tạo môi trường tốt nhất cho nhân viên để mang đến những sản phẩm công nghệ tốt nhất cho khách hàng</p>
             </motion.div>

@@ -3,7 +3,6 @@ import Introduce from "./components/Introduce/Introduce";
 import Services from "./components/Services/Services";
 import "./App.css";
 import Mile from "./components/Mile/Mile";
-import Team from "./components/Team/Team";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
@@ -14,6 +13,8 @@ import Solution from "./components/Solution/Solution";
 import Reviews from "./components/Reviews/Reviews";
 import GridLoader from "react-spinners/GridLoader";
 import Testimonials from "./components/Testimonials/Testimonials";
+import TeamWork from './components/TeamWork/TeamWork';
+import Project from "./components/Project/Project";
 
 function App() {
   const [loading, setLoading] = useState(false)
@@ -34,10 +35,11 @@ function App() {
             <Navbar />
             <Introduce />
             <About />
-            <Services />
             <Mile />
             <Reviews />
-            <Team />
+            <Services />
+            <TeamWork />
+            <Project />
             <Solution />
             <Testimonials />
             <Contact />

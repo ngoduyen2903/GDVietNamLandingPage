@@ -76,7 +76,7 @@
   cursor: pointer;
 }
 .navbar .active {
-  font-family: "Roboto-Regular";
+  font-family: "Roboto-Bold";
   cursor: pointer;
   position: relative;
   background: white;
@@ -86,31 +86,31 @@
   &:after,
   &:before {
     content: " ";
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 16px;
     position: absolute;
     border: 0px solid var(--bluebold);
     transition: all 1s;
   }
   &:after {
     top: 5px;
-    left: 5px;
-    border-top: 3px solid var(--bluebold);
-    border-left: 3px solid var(--bluebold);
+    left: 10px;
+    border-top: 3px double var(--bluebold);
+    border-left: 3px double var(--bluebold);
   }
   &:before {
     bottom: 5px;
-    right: 5px;
-    border-bottom: 3px solid var(--bluebold);
-    border-right: 3px solid var(--bluebold);
+    right: 10px;
+    border-bottom: 3px double var(--bluebold);
+    border-right: 3px double var(--bluebold);
   }
   &:hover {
     border-top-right-radius: 0px;
     border-bottom-left-radius: 0px;
     &:before,
     &:after {
-      width: 50%;
-      height: 50%;
+      width: 40%;
+      height: 40%;
     }
   }
 }

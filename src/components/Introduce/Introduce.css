@@ -16,57 +16,50 @@
   text-align: right;
   animation: fadeInUp 2s ease-out;
 }
-
-.btn-hover {
-  width: 130px;
-  font-size: 18px;
+.gradient-button span {
   color: #fff;
-  cursor: pointer;
-  margin-right: 20px;
-  height: 45px;
+  font-family: "Roboto-Bold";
+  font-size: 16px;
+}
+.gradient-button {
+  background-image: linear-gradient(to right, #000046 0%, #1cb5e0 51%, #000046 100%);
+  margin-right: 10px;
+  padding: 10px 28px;
   text-align: center;
-  border: none;
-  font-family: "Roboto-Medium";
-  border-radius: 50px;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-hover:hover {
-  background-position: 100% 0;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-
-.btn-hover:focus {
-  outline: none;
-}
-
-.btn-hover.color-1 {
-  background-color: var(--bluebold);
-  animation: moveInLeft 1s ease-out;
-}
-.btn-hover.color-1:hover {
-  background-image: linear-gradient(to right, blue, #2125b1);
-  color: #fff;
-}
-a .video-icon {
-  font-size: 42px;
-  color: var(--bluebold);
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  border-radius: 10px;
+  display: inline-block;
   cursor: pointer;
-  animation: moveInRight 1s ease-out;
 }
+
+.gradient-button:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+.video-icon {
+  color: var(--bluebold);
+  animation: rotate 2s linear infinite;
+  cursor: pointer;
+  margin-right: 2px;
+  width: 46px;
+}
+
 .video-text {
   color: var(--bluebold);
   font-family: "Roboto-Bold";
   font-size: 18px;
   cursor: pointer;
+  animation: moveInRight 1s ease-out;
+  text-transform: capitalize;
 }
 
 .center {
-  animation: moveInLeft 3s ease-out;
+  animation: moveInLeft 1s ease-out;
+  padding-top: 100px;
 }
 .center h2 {
   color: rgba(255, 0, 0, 0.1);
@@ -74,7 +67,7 @@ a .video-icon {
   text-transform: uppercase;
   font-weight: 700;
   background-size: cover;
-  background-image: url(https://img.freepik.com/free-vector/abstract-wavy-technology-particles-digital-background-design_1017-25227.jpg?w=1060&t=st=1688376293~exp=1688376893~hmac=83c4aeb55dbbbc08694a63d2258017a6c8d2295f1f04e8921251b472e25bae1d);
+  background-image: url(https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?w=996&t=st=1688629002~exp=1688629602~hmac=27682efcdbffef223a0411bhttps://img.freepik.com/premium-https://img.freepik.com/free-photo/abstract-background-with-low-poly-design_1048-8478.jpg?w=996&t=st=1688629002~exp=1688629602~hmac=27682efcdbffef223a0411b25255a8d19e8646207e001ab3dbf8edcb44b5272c/science-technology-background-with-blue-wireframe-abstract-digital-link-banner-generative-ai_942102-164.jpg?w=74025255a8d19e8646207e001ab3dbf8edcb44b5272c);
   -webkit-background-clip: text;
   animation: background-text-animation 15s linear infinite;
   font-size: 50px;
@@ -83,7 +76,7 @@ a .video-icon {
   font-size: 18px;
   font-family: "Roboto-Regular";
   margin: 30px 0;
-  color: var(--bluebold);
+  color: var(--black);
   animation: moveInRight 1s ease-out;
 }
 .img-fluid {
@@ -145,6 +138,14 @@ a .video-icon {
     transform: translateY(0);
   }
 }
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media (min-width: 1024px) {
   .introduce {
     background-attachment: fixed;
@@ -155,7 +156,7 @@ a .video-icon {
   .introduce {
     text-align: center;
     height: auto;
-    padding: 120px 0 60px 0;
+    padding: 80px 0 60px 0;
   }
 
   .introduce .introduce-img {
@@ -168,20 +169,30 @@ a .video-icon {
   }
 }
 @media (max-width: 575px) {
-  .center h2 {
-    font-size: 26px;
+  .introduce {
+    text-align: center;
+    height: auto;
+    padding: 80px 0 60px 0;
   }
-  a .video-icon {
-    font-size: 32px;
-    color: var(--bluebold);
-    cursor: pointer;
-    animation: moveInRight 1s ease-out;
+  .center {
+    animation: moveInLeft 3s ease-out;
+    padding-top: 10px;
   }
   .video-text {
     color: var(--bluebold);
     font-family: "Roboto-Bold";
-    font-size: 15px;
+    font-size: 14px;
     cursor: pointer;
+  }
+  .video-icon {
+    color: var(--bluebold);
+    animation: rotate 2s linear infinite;
+    cursor: pointer;
+    margin-right: 2px;
+    width: 38px;
+  }
+  .center h2 {
+    font-size: 28px;
   }
   .center h6 {
     font-size: 14px;
@@ -189,5 +200,20 @@ a .video-icon {
     margin: 15px 0;
     color: var(--bluebold);
     animation: moveInRight 1s ease-out;
+  }
+
+  .btn-grad {
+    background: linear-gradient(to right, #1723b1, #58f0ff);
+    margin: 10px;
+    padding: 6px 15px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 30px;
+    animation: moveInLeft 2s ease-out;
+    border: none;
+    font-family: "Roboto-Bold";
+    font-size: 14px;
   }
 }

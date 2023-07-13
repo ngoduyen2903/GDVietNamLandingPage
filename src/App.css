@@ -1,17 +1,13 @@
 :root {
   --BlueMain: #105ba6;
   --blue: #012970;
-  --purple: #4154f1;
   --black: #24292d;
   --gray: #788097;
   --blackGray: #448fc9;
   --white: #fff;
   --bluebg: #ecf3ff;
-  --blueCard: #ddf8fe;
   --bluebold: #00509d;
-  --light: #dddddd;
-  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --blackgray:#6B7280;
 }
 
 .App {

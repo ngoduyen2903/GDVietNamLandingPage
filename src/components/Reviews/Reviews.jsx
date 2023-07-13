@@ -10,39 +10,63 @@ import { motion } from "framer-motion";
 import Slider from "react-slick";
 
 const Reviews = () => {
+    const motionVertical = {
+        initial: { rotateX: -90 },
+        whileInView: { rotateX: 0 },
+        viewport: { margin: "0px" },
+        transition: { duration: 1 }
+    };
+
+    const motionCircle = {
+        initial: { rotate: 90 },
+        whileInView: { rotate: 0 },
+        viewport: { margin: "0px" },
+        transition: { duration: 2, type: "spring" }
+    }
+    const motionCircles = {
+        initial: { rotate: -45 },
+        whileInView: { rotate: 0 },
+        viewport: { margin: "0px" },
+        transition: { duration: 1, type: "spring" }
+    }
     const theme = useContext(themeContext);
     const darkMode = theme.state.darkMode;
 
-    var settings = {
+    var customCarousel = {
         dots: true,
         infinite: true,
-        speed: 2000,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 2000
     };
     return (
         <section className="feedback" id="feedback">
             <div className="container">
                 <div className="row justify-content-center text-center">
-                    <div className="container service-title">
-                        <h3 style={{ color: darkMode ? "#fff" : "" }}>ĐÁNH GIÁ</h3>
-                        <p style={{ color: darkMode ? "#fff" : "" }}>Khách hàng nói gì về các dịch vụ của chúng tôi</p>
+                    <div className="container feedback-title">
+                        <motion.h3 style={{ color: darkMode ? "#fff" : "" }}{...motionVertical}>
+                            ĐÁNH GIÁ
+                        </motion.h3>
+                        <motion.p style={{ color: darkMode ? "#fff" : "" }} {...motionVertical}>
+                            Khách hàng nói gì về các dịch vụ của chúng tôi
+                        </motion.p>
                     </div>
                 </div>
                 <div className="row g-5">
                     <div className="col-lg-2 d-none d-lg-block">
                         <div className="testimonial-left h-100">
-                            <img src={CustomerImage1} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
+                            <motion.div {...motionCircle}>
+                                <img src={CustomerImage1} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
+                            </motion.div>
                             <img src={CustomerImage2} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
                             <img src={CustomerImage3} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
                         </div>
                     </div>
                     <div className="col-lg-8">
-                        <Slider {...settings}>
+                        <Slider {...customCarousel}>
                             <div className="testimonial-item text-center">
-                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
+                                <motion.div {...motionCircle}>
                                     <img className="mx-auto mb-4" src={CustomerImage1} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p><FaQuoteLeft className="feedback-icon" />&nbsp;
@@ -52,7 +76,7 @@ const Reviews = () => {
                                 <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                             <div className="testimonial-item text-center">
-                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
+                                <motion.div {...motionCircle}>
                                     <img className="mx-auto mb-4" src={CustomerImage2} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p><FaQuoteLeft />&nbsp;
@@ -63,7 +87,7 @@ const Reviews = () => {
                                 <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                             <div className="testimonial-item text-center">
-                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
+                                <motion.div {...motionCircle}>
                                     <img className="mx-auto mb-4" src={CustomerImage3} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p><FaQuoteLeft />&nbsp;
@@ -74,7 +98,7 @@ const Reviews = () => {
                                 <span>Ngô Thị Cẩm Duyên</span>
                             </div>
                             <div className="testimonial-item text-center">
-                                <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 3, type: "spring" }}>
+                                <motion.div {...motionCircle}>
                                     <img className="mx-auto mb-4" src={CustomerImage1} alt="" style={{ width: 150 }} />
                                 </motion.div>
                                 <p>
@@ -89,7 +113,9 @@ const Reviews = () => {
                     </div>
                     <div className="col-lg-2 d-none d-lg-block">
                         <div className="testimonial-right h-100">
-                            <img src={CustomerImage3} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
+                            <motion.div {...motionCircles}>
+                                <img src={CustomerImage3} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
+                            </motion.div>
                             <img src={CustomerImage2} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
                             <img src={CustomerImage1} alt="Customer" style={{ borderColor: darkMode ? "#fff" : "" }} />
                         </div>

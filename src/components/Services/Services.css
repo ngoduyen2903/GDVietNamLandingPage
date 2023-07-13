@@ -1,6 +1,6 @@
 .services {
-  padding: 100px 0;
-  background-color: #ececeb;
+  padding: 30px 0 100px 0;
+  background-color: #e6f0f9;
 }
 .service-title {
   text-align: center;
@@ -17,24 +17,24 @@
 .service-title h3:before,
 .service-title h3:after {
   content: "";
-  width: 20px;
+  width: 10px;
   height: 2px;
   background: var(--bluebold);
   display: inline-block;
 }
 
 .service-title h3:before {
-  margin: 0 15px 10px 0;
+  margin: 0 10px 10px 0;
 }
 
 .service-title h3:after {
-  margin: 0 0 10px 15px;
+  margin: 0 0 10px 10px;
 }
 
 .service-title p {
   margin-bottom: 0;
   font-family: "Roboto-Regular";
-  color: var(--bluebold);
+  color: var(--black);
   font-size: 16px;
 }
 .service-item {
@@ -44,7 +44,6 @@
   background: #ffffff;
   transition: 0.5s;
   border-radius: 5px;
-  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
 }
 .service-item:hover {
   background: var(--bluebold);
@@ -67,12 +66,12 @@
 }
 .service-item h5 {
   transition: 0.5s;
-  font-family: "Roboto-Medium";
+  font-family: "Roboto-Bold";
   font-size: 20px;
 }
 .service-item p {
   transition: 0.5s;
-  font-family: "Roboto-Light";
+  font-family: "Roboto-Regular";
   font-size: 16px;
 }
 .service-item:hover h5,
@@ -99,7 +98,7 @@
   top: 0;
   left: 0;
   border-radius: 35px;
-  background: #dddddd;
+  background: #e6f0f9;
   transition: 0.5s;
   z-index: -1;
   padding: 20px 30px;
@@ -109,12 +108,35 @@
   background: var(--light);
 }
 @media (max-width: 575px) {
+  .service-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
   .service-title h3 {
     color: var(--bluebold);
-    font-size: 26px;
+    font-size: 28px;
     position: relative;
     font-family: "Roboto-Bold";
   }
+
+  .service-title h3:before,
+  .service-title h3:after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: var(--bluebold);
+    display: inline-block;
+  }
+
+  .service-title h3:before {
+    margin: 0 10px 6px 0;
+  }
+
+  .service-title h3:after {
+    margin: 0 0 6px 10px;
+  }
+
   .service-title p {
     margin-bottom: 0;
     font-family: "Roboto-Regular";
@@ -122,6 +144,34 @@
     font-size: 14px;
   }
   .services {
-    margin: 10px 0;
+    padding: 30px 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .service-title p {
+    margin-bottom: 0;
+    font-family: "Roboto-Regular";
+    color: var(--bluebold);
+    font-size: 18px;
+  }
+  .services {
+    padding: 30px 0 80px 0;
+  }
+
+  .service-title h3:before,
+  .service-title h3:after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: var(--bluebold);
+    display: inline-block;
+  }
+
+  .service-title h3:before {
+    margin: 0 10px 6px 0;
+  }
+
+  .service-title h3:after {
+    margin: 0 0 6px 10px;
   }
 }

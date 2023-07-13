@@ -8,7 +8,7 @@
 
 .mile-title h3 {
     color: var(--bluebold);
-    font-size: 32px;
+    font-size: 30px;
     position: relative;
     font-family: "Roboto-Bold";
 }
@@ -16,28 +16,32 @@
 .mile-title h3:before,
 .mile-title h3:after {
     content: "";
-    width: 20px;
+    width: 10px;
     height: 2px;
-    background: var(--bluebold);
+    background: var(--black);
     display: inline-block;
 }
 
 .mile-title h3:before {
-    margin: 0 15px 10px 0;
+    margin: 0 10px 10px 0;
 }
 
 .mile-title h3:after {
-    margin: 0 0 10px 15px;
+    margin: 0 0 10px 10px;
 }
 
 .mile-title p {
     margin-bottom: 0;
     font-family: "Roboto-Regular";
-    color: var(--bluebold);
+    color: var(--black);
     font-size: 16px;
 }
+time {
+    font-size: 20px;
+    font-weight: 600;
+}
 .timeline {
-    padding: 50px 0px;
+    padding: 50px 0 0 0;
     position: relative;
 }
 .timeline-nodes {
@@ -49,18 +53,18 @@
 }
 .timeline p {
     padding: 5px 15px;
-    font-family: "Roboto-Light";
+    font-family: "Roboto-Regular";
     font-size: 14px;
 }
 .timeline h3 {
     padding: 5px 15px;
     background: var(--bluebold);
     font-family: "Roboto-Medium";
-    font-size: 24px;
+    font-size: 22px;
 }
 .timeline p,
 .timeline time {
-    color: var(--bluebold);
+    color: var(--black);
 }
 .timeline::before {
     content: "";
@@ -69,15 +73,15 @@
     top: 0;
     left: 50%;
     width: 0;
-    border-left: 2px dashed var(--bluebold);
+    border-left: 8px dashed var(--bluebold);
     height: 100%;
     z-index: 1;
     transform: translateX(-50%);
 }
 .timeline-content {
-    border: 1px solid var(--blue);
+    border: 1px solid var(--bluebold);
     position: relative;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 8px 60px;
     box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
 }
 .timeline-nodes:nth-child(odd) h3,
@@ -97,9 +101,9 @@
     top: 5%;
     left: 100%;
     width: 0;
-    border-left: 10px solid var(--bluebold);
+    border-left: 30px solid var(--bluebold);
     border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-bottom: 20px solid transparent;
 }
 .timeline-nodes:nth-child(even) .timeline-content::after {
     content: "";
@@ -107,9 +111,9 @@
     top: 5%;
     right: 100%;
     width: 0;
-    border-right: 10px solid var(--bluebold);
+    border-right: 30px solid var(--bluebold);
     border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
+    border-bottom: 20px solid transparent;
 }
 .timeline-image {
     position: relative;
@@ -206,9 +210,15 @@
 }
 
 @media (max-width: 575px) {
+    .timeline-content {
+        border: 1px solid var(--blue);
+        position: relative;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
+    }
     .mile-title h3 {
         color: var(--bluebold);
-        font-size: 18px;
+        font-size: 20px;
         position: relative;
         font-family: "Roboto-Bold";
     }
@@ -221,19 +231,219 @@
     }
     .timeline-image {
         position: absolute;
-        left: -5%;
+        left: -7%;
     }
-    .timeline {
-        padding: 0px 10px;
-        position: relative;
-    }
+
     .timeline-image img {
         display: none;
     }
     .mile-title p {
         margin-bottom: 0;
         font-family: "Roboto-Regular";
+        color: var(--black);
+        font-size: 14px;
+    }
+    .timeline p {
+        padding: 5px 15px;
+        font-family: "Roboto-Regular";
+        font-size: 14px;
+    }
+    .timeline h3 {
+        padding: 5px 15px;
+        background: var(--bluebold);
+        font-family: "Roboto-Medium";
+        font-size: 22px;
+    }
+    .timeline-nodes:nth-child(odd) .timeline-content::after {
+        content: "";
+        position: absolute;
+        top: 5%;
+        left: auto;
+        right: 100%;
+        width: 0;
+        border-left: 0;
+        border-right: 40px solid var(--bluebold);
+        border-top: 10px solid transparent;
+        border-bottom: 40px solid transparent;
+    }
+    .timeline-nodes:nth-child(even) .timeline-content::after {
+        content: "";
+        position: absolute;
+        top: 5%;
+        right: 100%;
+        width: 0;
+        border-right: 40px solid var(--bluebold);
+        border-top: 10px solid transparent;
+        border-bottom: 40px solid transparent;
+    }
+    .timeline-image::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        border: 2px dashed var(--bluebold);
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        z-index: 1;
+    }
+    .mile-title h3:before {
+        margin: 0 5px 6px 0;
+    }
+
+    .mile-title h3:after {
+        margin: 0 0 6px 5px;
+    }
+    .mile-title h3:before,
+    .mile-title h3:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: var(--bluebold);
+        display: inline-block;
+    }
+    .mile-title {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .mile {
+        padding: 10px 0;
+    }
+    .mile-title {
+        text-align: center;
+        padding-bottom: 30px;
+    }
+
+    .mile-title h3 {
         color: var(--bluebold);
-        font-size: 13px;
+        font-size: 30px;
+        position: relative;
+        font-family: "Roboto-Bold";
+    }
+
+    .mile-title h3:before,
+    .mile-title h3:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: var(--bluebold);
+        display: inline-block;
+    }
+
+    .mile-title h3:before {
+        margin: 0 15px 10px 0;
+    }
+
+    .mile-title h3:after {
+        margin: 0 0 10px 15px;
+    }
+
+    .mile-title p {
+        margin-bottom: 0;
+        font-family: "Roboto-Regular";
+        color: var(--bluebold);
+        font-size: 18px;
+    }
+    time {
+        font-size: 24px;
+        font-weight: 600;
+    }
+    .timeline {
+        padding: 50px 0 0 0;
+        position: relative;
+    }
+    .timeline-nodes {
+        padding-bottom: 25px;
+        position: relative;
+    }
+    .timeline-nodes:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    .timeline p {
+        padding: 5px 15px;
+        font-family: "Roboto-Regular";
+        font-size: 16px;
+    }
+    .timeline h3 {
+        padding: 5px 15px;
+        background: var(--bluebold);
+        font-family: "Roboto-Medium";
+        font-size: 22px;
+    }
+    .timeline p,
+    .timeline time {
+        color: var(--bluebold);
+    }
+    .timeline::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 0;
+        border-left: 8px dashed var(--bluebold);
+        height: 100%;
+        z-index: 1;
+        transform: translateX(-50%);
+    }
+    .timeline-content {
+        border: 1px solid var(--blue);
+        position: relative;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 0px 3px 25px 0px rgba(10, 55, 90, 0.2);
+    }
+    .timeline-nodes:nth-child(odd) h3,
+    .timeline-nodes:nth-child(odd) p {
+        text-align: right;
+    }
+    .timeline-nodes:nth-child(odd) .timeline-date {
+        text-align: left;
+    }
+
+    .timeline-nodes:nth-child(even) .timeline-date {
+        text-align: right;
+    }
+    .timeline-nodes:nth-child(odd) .timeline-content::after {
+        content: "";
+        position: absolute;
+        top: 5%;
+        left: 100%;
+        width: 0;
+        border-left: 40px solid var(--bluebold);
+        border-top: 10px solid transparent;
+        border-bottom: 40px solid transparent;
+    }
+    .timeline-nodes:nth-child(even) .timeline-content::after {
+        content: "";
+        position: absolute;
+        top: 5%;
+        right: 100%;
+        width: 0;
+        border-right: 40px solid var(--bluebold);
+        border-top: 10px solid transparent;
+        border-bottom: 40px solid transparent;
+    }
+
+    .timeline-image::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 2px dashed var(--bluebold);
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        z-index: 1;
+    }
+    .timeline-image img {
+        display: none;
     }
 }

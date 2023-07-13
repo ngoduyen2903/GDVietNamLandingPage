@@ -31,7 +31,6 @@ const Footer = () => {
             <div className="col-lg-2 col-6 footer-links"></div>
             <div className="col-lg-2 col-6 footer-links"></div>
             <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-              <h4></h4>
               <p style={{ color: darkMode ? "#00509d" : "" }}>
                 <strong>Phone:</strong> 0799 552 667<br />
                 <strong>Email:</strong> info@gdvietnam.com<br />

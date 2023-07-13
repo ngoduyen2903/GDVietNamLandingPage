@@ -1,0 +1,308 @@
+.team {
+    padding: 100px 0;
+}
+.team-title {
+    text-align: center;
+}
+
+.team-title h3 {
+    color: var(--bluebold);
+    font-size: 32px;
+    position: relative;
+    font-family: "Roboto-Bold";
+}
+
+.team-title h3:before,
+.team-title h3:after {
+    content: "";
+    width: 10px;
+    height: 2px;
+    background: var(--bluebold);
+    display: inline-block;
+}
+
+.team-title h3:before {
+    margin: 0 10px 10px 0;
+}
+
+.team-title h3:after {
+    margin: 0 0 10px 10px;
+}
+
+.team-title p {
+    margin-bottom: 40px;
+    font-family: "Roboto-Regular";
+    color: var(--black);
+    font-size: 16px;
+}
+
+.team-member {
+    position: relative;
+    margin-top: 120px;
+}
+
+.team-member:hover img {
+    top: -115px;
+}
+
+.team-member img {
+    max-width: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -105px;
+    left: 50%;
+    transform: translateX(-110px);
+    transition: all 0.3s;
+}
+
+.team-member .main-content {
+    border-radius: 20%;
+    padding: 134px 30px 40px 30px;
+    background-color: #e6f0f9;
+    text-align: center;
+    overflow: auto;
+    height: 380px;
+}
+.team-member .main-content h4 {
+    font-size: 18px;
+    font-family: "Roboto-Bold";
+    color: var(--black);
+}
+.team-member .main-content span.category {
+    font-size: 16px;
+    font-family: "Roboto-Bold";
+    color: var(--bluebold);
+}
+
+.team-member .main-content p.work {
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    color: var(--blackgray);
+    margin-top: 16px;
+}
+.team-member .main-content ul {
+    padding: 0 10px;
+}
+.team-member .main-content ul li {
+    display: inline-block;
+    margin: 0px 8px;
+}
+
+.team-member .main-content ul li a {
+    background-color: #fff;
+    color: var(--bluebold);
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.team-member .main-content ul li a:hover {
+    background-color: var(--bluebold);
+    color: #fff;
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .team-title {
+        text-align: center;
+        padding-bottom: 60px;
+    }
+
+    .team-title h3 {
+        color: var(--bluebold);
+        font-size: 20px;
+        position: relative;
+        font-family: "Roboto-Medium";
+    }
+
+    .team-title h3:before,
+    .team-title h3:after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: var(--bluebold);
+        display: inline-block;
+    }
+
+    .team-title h3:before {
+        margin: 0 5px 5px 0;
+    }
+
+    .team-title h3:after {
+        margin: 0 0 5px 5px;
+    }
+
+    .team-title p {
+        margin-bottom: 0;
+        font-family: "Roboto-Light";
+        font-size: 14px;
+    }
+    .team-member {
+        position: relative;
+        margin: 80px 30px 30px 0;
+    }
+    .team-member .main-content {
+        border-radius: 10px;
+        padding: 134px 10px 40px 10px;
+        background-color: #e6f0f9;
+        text-align: center;
+        overflow: auto;
+        height: 380px;
+    }
+}
+@media (max-width: 575px) {
+    .team-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .team-title h3 {
+        color: var(--bluebold);
+        font-size: 20px;
+        position: relative;
+        font-family: "Roboto-Bold";
+    }
+
+    .team-title h3:before,
+    .team-title h3:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: var(--bluebold);
+        display: inline-block;
+    }
+
+    .team-title h3:before {
+        margin: 0 5px 5px 0;
+    }
+
+    .team-title h3:after {
+        margin: 0 0 5px 5px;
+    }
+
+    .team-title p {
+        margin-bottom: 0;
+        font-family: "Roboto-Regular";
+        font-size: 14px;
+    }
+    .team-member {
+        position: relative;
+        margin: 80px 30px 30px 0;
+    }
+    .team {
+        padding: 30px 0;
+    }
+    .team-member .main-content {
+        border-radius: 10px;
+        padding: 134px 10px 40px 10px;
+        background-color: #e6f0f9;
+        text-align: center;
+        overflow: auto;
+        height: 380px;
+    }
+    .team-member .main-content h4 {
+        font-size: 16px;
+        font-family: "Roboto-Bold";
+        color: var(--black);
+    }
+    .team-member .main-content span.category {
+        font-size: 14px;
+        font-family: "Roboto-Bold";
+        color: var(--bluebold);
+    }
+
+    .team-member .main-content p.work {
+        font-size: 12px;
+        font-family: "Roboto-Light";
+        color: var(--black);
+        margin-top: 16px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .team {
+        padding: 40px 20px 0 0;
+        margin-bottom: 30px;
+    }
+    .team-title {
+        text-align: center;
+    }
+
+    .team-title h3 {
+        color: var(--bluebold);
+        font-size: 32px;
+        position: relative;
+        font-family: "Roboto-Bold";
+    }
+
+    .team-title h3:before,
+    .team-title h3:after {
+        content: "";
+        width: 10px;
+        height: 2px;
+        background: var(--bluebold);
+        display: inline-block;
+    }
+
+    .team-title h3:before {
+        margin: 0 15px 10px 0;
+    }
+
+    .team-title h3:after {
+        margin: 0 0 10px 15px;
+    }
+
+    .team-title p {
+        margin-bottom: 20px;
+        font-family: "Roboto-Regular";
+        color: var(--bluebold);
+        font-size: 18px;
+    }
+
+    .team-member {
+        position: relative;
+        margin-top: 120px;
+    }
+
+    .team-member:hover img {
+        top: -115px;
+    }
+
+    .team-member img {
+        max-width: 220px;
+        border-radius: 50%;
+        position: absolute;
+        top: -105px;
+        left: 50%;
+        transform: translateX(-110px);
+        transition: all 0.3s;
+    }
+
+    .team-member .main-content {
+        border-radius: 30px;
+        padding: 134px 20px 40px 20px;
+        background-color: #e6f0f9;
+        text-align: center;
+        overflow: auto;
+        height: 380px;
+    }
+    .team-member .main-content h4 {
+        font-size: 22px;
+        font-family: "Roboto-Bold";
+        color: var(--black);
+    }
+    .team-member .main-content span.category {
+        font-size: 15px;
+        font-family: "Roboto-Bold";
+        color: var(--bluebold);
+    }
+
+    .team-member .main-content p.work {
+        font-size: 18px;
+        font-family: "Roboto-Light";
+        color: var(--black);
+        margin-top: 16px;
+    }
+}
